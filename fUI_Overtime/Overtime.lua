@@ -107,7 +107,7 @@ local ToyIDs = {
     end
 
     elseif id == 87216 then
-        name = GetItemInfo(id)
+        name = C_Item.GetItemInfo(id)
         icon = C_Item.GetItemIconByID(id)
         tabType = "item"
 
@@ -279,8 +279,8 @@ local ToyIDs = {
   if PlayerHasToy(128536) then
 	 tinsert(subTabs, 128536) --Leylight Brazier
   end
-   if GetItemCount(87216) ~= 0 then
-	 tinsert(subTabs, 126462) --ThermalAnvil
+   if C_Item.GetItemCount(87216) ~= 0 then
+	 tinsert(subTabs, 87216) --ThermalAnvil
   end
   
   local prof1, prof2, arch, fish, cook = GetProfessions()
